@@ -21,6 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common DotOS stuff
 $(call inherit-product, vendor/dot/config/common.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 DOT_BUILD_TYPE := TUCUMÃ
 TARGET_SUPPORTS_BLUR := true
