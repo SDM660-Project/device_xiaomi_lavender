@@ -26,6 +26,20 @@ $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
 DEVICE_PATH := device/xiaomi/lavender
 
+# Hardware
+PRODUCT_BOARD_PLATFORM := sdm660
+PRODUCT_USES_QCOM_HARDWARE := true
+
+# HALS
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sdm660/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sdm660/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sdm660/media
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/qcom-caf/sdm660
+
 # Properties ($PATH.prop)
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop

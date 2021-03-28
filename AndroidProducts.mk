@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/legion_lavender.mk
+    $(LOCAL_DIR)/octavi_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    legion_lavender-eng \
-    legion_lavender-userdebug \
-    legion_lavender-user
+    octavi_lavender-eng \
+    octavi_lavender-userdebug \
+    octavi_lavender-user

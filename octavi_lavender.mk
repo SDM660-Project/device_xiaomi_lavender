@@ -20,13 +20,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common LegionOS stuff
-$(call inherit-product, vendor/legion/config/common_full_phone.mk)
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+IS_PHONE := true
+WITH_GAPPS := false
 
-LEGION_BUILD_TYPE := TUCUMÃ
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.maintainer.name=CHRISL7
+OCTAVI_BUILD_TYPE := OFFICIAL
+OCTAVI_DEVICE_MAINTAINER := CHRISL7
 
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -34,7 +36,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lavender
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := legion_lavender
+PRODUCT_NAME := octavi_lavender
 PRODUCT_MODEL := Redmi Note 7
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
