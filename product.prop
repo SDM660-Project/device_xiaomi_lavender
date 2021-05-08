@@ -1,3 +1,7 @@
 # SurfaceFlinger
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.use_color_management=true
+
+# Octavi-OS
+ro.octavi.status=2.4 OFFICIAL
+ro.octavi.maintainer=CHRISL7
