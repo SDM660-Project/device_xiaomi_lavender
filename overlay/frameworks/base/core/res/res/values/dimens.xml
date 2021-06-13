@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Height of area above QQS where battery/time go -->
+    <dimen name="quick_qs_offset_height">130dp</dimen>
+    <!-- Total height of QQS in landscape, this is effectively status_bar_height_landscape + 128 -->
+    <dimen name="quick_qs_total_height">246dp</dimen>
+
+</resources>
